@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — Bold Creatives</title>
+  <meta name="description" content="All our latest insights, thoughts, and creative perspectives from the Bold Creatives team." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="page-transition"></div>
+  <div class="cursor"></div>
+
+  <nav class="nav">
+    <div class="nav__logo">bold.creatives</div>
+    <div class="nav__pill">
+      <div class="nav__item" data-page="who">Who we are</div>
+      <div class="nav__item" data-page="what">What we do</div>
+      <div class="nav__item" data-page="work">Our work</div>
+      <div class="nav__item active" data-page="news">News</div>
+      <div class="nav__item" data-modal="contact">Contact us</div>
+    </div>
+    <div class="nav__hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__item" data-page="who">Who we are</div>
+    <div class="mobile-menu__item" data-page="what">What we do</div>
+    <div class="mobile-menu__item" data-page="work">Our work</div>
+    <div class="mobile-menu__item active" data-page="news">News</div>
+    <div class="mobile-menu__item" data-modal="contact">Contact us</div>
+  </div>
+
+  <!-- Hero -->
+  <div class="news-hero">
+    <p class="whatwedo-hero__label">Insights</p>
+    <h1 class="news-hero__title fade-up">
+      All our<br>latest<br>insights
+      <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#d4ff3c;margin-left:20px;vertical-align:middle;"></span>
+    </h1>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <p class="footer__headline fade-up">Talk to us;<br>we're all ears.</p>
+      <div class="footer__cta"><small data-modal="contact">Play showreel ↗</small></div>
+      <hr class="footer__divider" />
+      <div class="footer__info stagger">
+        <div class="footer__info-group">
+          <div class="footer__info-label">Phone #</div>
+          <div class="footer__info-value"><a href="tel:+966114330099">+966 11 433 0099</a></div>
+        </div>
+        <div class="footer__info-group">
+          <div class="footer__info-label">Address</div>
+          <div class="footer__info-value">Riyadh | Cairo</div>
+        </div>
+        <div class="footer__info-group footer__social">
+          <div class="footer__info-label">Social</div>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer__social-link">LinkedIn</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="footer__social-link">Instagram</a>
+        </div>
+        <div class="footer__info-group">
+          <div class="footer__info-label">Email @</div>
+          <div class="footer__info-value"><a href="mailto:business@boldcreatives.com">business@boldcreatives.com</a></div>
+        </div>
+        <div class="footer__info-group">
+          <div class="footer__info-label">Working Hours</div>
+          <div class="footer__info-value">Sunday – Thursday<br>10am – 6pm</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__wordmark">bold.creatives</div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay">
+    <div class="modal-backdrop"></div>
+    <div class="modal">
+      <button class="modal__close">✕</button>
+      <h2 class="modal__title">Talk to us;<br>we're all ears.</h2>
+      <div class="modal__tabs">
+        <button class="modal__tab active" data-tab="work">Work with us</button>
+        <button class="modal__tab" data-tab="talk">Talk to us</button>
+        <button class="modal__tab" data-tab="join">Join us</button>
+      </div>
+      <form class="modal__form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="news-name">Your name</label>
+            <input type="text" id="news-name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="news-email">Your email</label>
+            <input type="email" id="news-email" placeholder="Your email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="news-msg">Your message</label>
+          <textarea id="news-msg" placeholder="Type here"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="form-footer__note">
+            <span>Or write us at</span>
+            <a href="mailto:business@boldcreatives.com">business@boldcreatives.com</a>
+          </div>
+          <button class="btn btn--white" type="submit">Send email <span class="arrow">→</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/dither.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
